@@ -38,7 +38,7 @@ if __name__ == "__main__":
         print(f'Usage: {sys.argv[0]} <file_to_upload> <bearer>')
         sys.exit(1)
 
-    repo_path = 'RedDocMD/cork'
+    repo_path = 'RedDocMD/rust-phf'
     file_path = pathlib.PurePath(sys.argv[1])
     bearer = sys.argv[2]
 
