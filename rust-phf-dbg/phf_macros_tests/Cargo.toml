@@ -1,0 +1,18 @@
+[package]
+name = "phf_macros_tests"
+version = "0.1.0"
+authors = ["Yuki Okushi <jtitor@2k36.org>"]
+edition = "2021"
+rust-version = "1.60"
+repository = "https://github.com/rust-phf/rust-phf"
+categories = ["data-structures"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dev-dependencies]
+trybuild = "1.0"
+phf = { version = "0.11", features = ["macros"] }
+phf_macros = { version = "0.11", features = ["unicase"] }
+unicase = "2.4.0"
