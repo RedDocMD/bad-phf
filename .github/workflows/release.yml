@@ -24,7 +24,7 @@ jobs:
           python3 -m pip install gitpython termcolor requests
       - name: Upload Assets
         run: |
-          python3 .github/workflows/make_release.py target/release/cork $GITHUB_TOKEN
+          python3 .github/workflows/make_release.py target/release/bad-phf $GITHUB_TOKEN
   
   windows:
     runs-on: windows-latest
@@ -45,6 +45,6 @@ jobs:
           python3 -m pip install gitpython termcolor requests
       - name: Upload portable executable
         run: |
-          cp target/release/cork.exe ./cork-${GITHUB_REF##*/}-portable.exe
+          cp target/release/bad-phf.exe ./bad-phf-${GITHUB_REF##*/}-portable.exe
           python3 .github/workflows/make_release.py \
             ./cork-${GITHUB_REF##*/}-portable.exe $GITHUB_TOKEN
